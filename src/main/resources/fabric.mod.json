@@ -1,0 +1,37 @@
+{
+	"schemaVersion": 1,
+	"id": "baka",
+	"version": "${version}",
+	"name": "Baka",
+	"description": "\"Baka\" as in \"stupid/dumb/idiot\" in Japanese was chosen, as it is just the right name for this mod :D",
+	"authors": [
+		"Kristalli Kosknein"
+	],
+	"contact": {
+		"homepage": "https://github.com/KristalliDev/Baka/",
+		"sources": "https://github.com/KristalliDev/Baka/"
+	},
+	"license": "Unlicense",
+	"icon": "assets/baka/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"dev.kristalli.baka.Baka"
+		],
+		"fabric-datagen": [
+			"dev.kristalli.baka.BakaDataGenerator"
+		]
+	},
+	"mixins": [
+		"baka.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.14.17",
+		"minecraft": "~1.19.3",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
