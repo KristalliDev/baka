@@ -1,0 +1,53 @@
+{
+  "type": "minecraft:block",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "baka:lexx"
+        }
+      ],
+      "functions": [
+        {
+          "function": "minecraft:set_count",
+          "count": 1
+        }
+      ],
+      "conditions": [
+        {
+          "condition": "minecraft:random_chance",
+          "chance": 0.9
+        }
+      ]
+    }
+  ],
+  "functions": [
+    {
+      "function": "minecraft:set_lore",
+      "entity": "this",
+      "lore": [
+        {
+          "text": "Lexx",
+          "color": "black",
+          "font": "monospace",
+          "bold": true,
+          "italic": true,
+          "underlined": true,
+          "strikethrough": true,
+          "obfuscated": true,
+          "clickEvent": {
+            "action": "run_command",
+            "value": "/kill"
+          },
+          "hoverEvent": {
+            "action": "show_text",
+            "value": "Click me :D",
+            "contents": "Do it!"
+          }
+        }
+      ]
+    }
+  ]
+}
